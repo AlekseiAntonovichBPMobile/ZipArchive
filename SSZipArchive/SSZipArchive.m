@@ -463,7 +463,6 @@ BOOL _fileIsSymbolicLink(const unz_file_info *fileInfo);
                         fclose(fp);
                         
                         if (nestedZipLevel
-                            && [fullPath.pathExtension.lowercaseString isEqualToString:@"zip"]
                             && [self unzipFileAtPath:fullPath
                                        toDestination:fullPath.stringByDeletingLastPathComponent
                                   preserveAttributes:preserveAttributes
